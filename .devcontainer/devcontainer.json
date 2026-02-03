@@ -1,0 +1,22 @@
+{
+  "name": "Copilot Deep Dive Dev Container",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    },
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "linkedinlearning.linkedinlearning-vscode-theme",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+        // Additional Extensions Here
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  // Update welcome text and set terminal prompt to '$ '
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+}
